@@ -1,7 +1,7 @@
 LabelView = require './label-view'
 CiteView = require './cite-view'
 LatexerHook = require './latexer-hook'
-{TextEditor, CompositeDisposable} = require 'atom'
+{CompositeDisposable} = require 'atom'
 
 
 module.exports = Latexer =
@@ -17,6 +17,3 @@ module.exports = Latexer =
       new LatexerHook(editor)
 
   deactivate: ->
-
-  serialize: ->
-    latexerViewState: @latexerView.serialize()

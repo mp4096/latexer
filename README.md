@@ -10,8 +10,8 @@ Features
 ####Reference autocompletion
   ![Autocompletion of references](https://github.com/Focus/latexer/raw/master/screenshots/ref.gif)
 Triggers:
-  * Typing in `\ref{` or `\eqref{`
-  * Deleting anything so that the left of the cursor reads `\ref{` or `\eqref{`, e.g. deleting the word 'something' from `\ref{something}`
+  * Typing in `\ref{`, `\eqref{` or any control sequences that ends in `ref{`
+  * Deleting anything so that the left of the cursor reads `\ref{`, `\eqref{`, and the like. E.g. deleting the word 'something' from `\pageref{something}`
 
 
 ####Bibliography autocompletion
@@ -24,6 +24,8 @@ Triggers:
 Will look for Bibtex files given in the current file of the form `\bibliography`, `\addbibresource` and `\addglobalbib`.
 
 For **multifile** support, from the child files use `%!TEX root = mainfile.tex` to point to the root file.
+
+You can edit from the preferences window which parameters you would like to search the bibliographies by. The default is `title,author`, for example `key,year` will search through entries by their key, i.e. `@key{...}`, and the year it was published.
 
 
 #####Environment autocompletion

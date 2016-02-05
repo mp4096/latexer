@@ -1,3 +1,7 @@
+##0.2.8
+* Generalized \ref matching to include any control sequence that ends in `ref`
+* Small bug fixes
+
 ## 0.2.5
 * Added support for searching citations by different parameters
 * Added support for comma seperated citations/references
