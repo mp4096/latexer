@@ -1,10 +1,16 @@
 {
   "name": "latexer",
   "main": "./lib/latexer",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "Adds LaTex autocompletion for Atom.io",
   "repository": "https://github.com/Focus/latexer",
   "license": "MIT",
+  "keywords": [
+    "tex",
+    "latex",
+    "bibtex",
+    "autocomplete"
+  ],
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
